@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import MainComponent from './MainComponent';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
-    <BrowserRouter>
+    <HashRouter>
         <MainComponent/>
-    </BrowserRouter>,
+    </HashRouter>,
     document.getElementById('content'));

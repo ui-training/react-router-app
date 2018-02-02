@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './ListingItem.less';
 
 class ListingItemComponent extends Component {
 
@@ -20,9 +21,22 @@ class ListingItemComponent extends Component {
 
                 <div className="card-footer">
                     <div className='item-price'>{item.price}</div>
+                    {
+                        this.getCartStatus(item.addedToCart)
+                    }
+
                 </div>
             </div>
         );
+    }
+
+    getCartStatus(isItemAdded) {
+
+        if(isItemAdded) {
+            return <div>Added to Cart</div>;
+        }  else {
+            return <div className='btn btn-success' onClick={e => this.props.addToCart(this.props.id)}>Add to cart</div>;
+        }
     }
 }
 
