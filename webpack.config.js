@@ -67,7 +67,7 @@ var webpackConfig = {
             },
             {
                 test: /\.(ttf|eot|svg|woff|woff2)$/,
-                loader: 'file?name=fonts/[name].[ext]'
+                loader: 'file-loader?name=fonts/[name].[ext]'
             }
         ]
     }
