@@ -1,8 +1,8 @@
 {
   "name": "react-router-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "webpack.config.js",
+  "description": "Basic ECommerce app",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,8 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-router": "^4.2.0"
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
